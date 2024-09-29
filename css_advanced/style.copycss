@@ -1,0 +1,455 @@
+/* Base Styles */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+/* Header Section */
+.landingpg {
+    height: 1050px;
+    width: 1450px;
+    position: relative;
+    background-image: linear-gradient(rgba(41, 48, 61, 0.1), rgba(24, 35, 51, 0.51), rgba(7, 22, 41, 1)), url("./images/Object.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 1100px;
+    height: 30px;
+    padding: 20px 80px;
+    display: flex;
+    gap: 650px;
+    font-family: 'Source Sans Pro', sans-serif; /* Ensure to include a fallback font */
+    font-size: 12px;
+    font-weight: 700; /* Bold */
+    line-height: 15.08px;
+    text-align: left;
+}
+
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 50px;
+}
+
+.navbar ul li .link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top {
+    color: #fff;
+    align-items: center;
+}
+
+.topposition {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif; /* Ensure to include a fallback font */
+    font-size: 120px;
+    font-weight: 700; /* Bold */
+    line-height: 150.84px;
+    text-align: center;
+}
+
+.top h1 {
+    font-weight: bold;
+    font-size: 7.5rem; /* 120px / 16 = 7.5rem */
+}
+
+.top .content:nth-child(2) {
+    left: 390px;
+}
+.top .content:nth-child(3) {
+    left: 460px;
+}
+.top .content:nth-child(4) {
+    left: 520px;
+}
+
+.top .block {
+    display: block;
+}
+
+.top span.content {
+    color: #fff;
+    font-size: 16px; /* Added unit */
+    font-weight: bold;
+    margin: 120px 20px 20px 20px;
+    padding: 0 230px;
+}
+
+.top .button {
+    left: 410px;
+    margin: 210px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #C271FF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: medium;
+    color: #fff; /* Ensure text color is consistent */
+}
+
+/* Engage Section */
+.engage {
+    margin: 340px 0 420px 250px;
+    font-size: 27px;
+}
+
+.engage span {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+/* Pro Section */
+.inssection {
+    height: 1055px;
+    width: 1448.15px;
+}
+
+.instructor {
+    width: 1009px;
+    height: 237px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 500px;
+    left: 80px;
+    padding: 0 35px;
+}
+
+.instructorimg {
+    width: 150px;
+    height: 237px;
+}
+
+.instructorimg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.instructorimg h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.instructorimg p {
+    width: 150px;
+    height: 48px;
+    font-weight: italic;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Client Section */
+.client {
+    position: absolute;
+    top: 1050px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 1447px;
+    height: 392px;
+    background-color: #C271FF;
+    display: flex;
+    gap: 5px;
+    color: #fff;
+}
+
+.imagebox {
+    margin: 100px 20px 0px 300px;
+    width: 160px;
+    height: 160px;
+}
+
+.imgtext {
+    width: 943px;
+    height: 160px;
+}
+
+.textsec2 {
+    position: relative;
+}
+
+.textsec2 blockquote {
+    margin: 100px 700px 50px 0px;
+    font-size: smaller;
+    line-height: 20px;
+    height: 68px;
+    width: 730px;
+}
+
+.textsec2 h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+/* Tutorial Section */
+.tutorials {
+    position: absolute;
+    top: 1500px;
+    box-sizing: border-box;
+    margin-top: 0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.tutorialshead {
+    font-size: 28px;
+    margin-bottom: 70px;
+}
+
+.tutorialshead span {
+    color: #C271FF;
+}
+
+.tutorial-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tutorial-card {
+    background-color: #fff;
+    width: 220px;
+    padding: 20px;
+    text-align: left;
+}
+
+.tutorial-image {
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.tutorial-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.play-overlay img {
+    width: 30px;
+    height: 30px;
+}
+
+.tutorial-card h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.tutorial-card p {
+    font-size: 14px;
+    color: #575b60;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+p.color {
+    position: absolute;
+    margin-top: 0%;
+    transform: translate(500%, -120%);
+    color: #C271FF;
+    text-align: right;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author h4 {
+    font-size: 14px;
+    color: #C271FF;
+}
+
+.stars {
+    color: #C271FF;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.stars i {
+    color: #C271FF;
+    margin-right: 5px;
+    z-index: 10;
+}
+
+.time {
+    font-size: 12px;
+    color: #C271FF;
+    margin-top: 10px;
+}
+
+/* Membership Section */
+.membership {
+    position: absolute;
+    top: 2050px;
+    width: 1440px;
+    height: 502px;
+    background-color: #071629;
+    color: #fff;
+}
+
+.container {
+    width: 257px;
+    height: 153px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding: 60px 120px 110px 120px;
+    margin: 0 50px;
+    position: relative;
+}
+
+.regbutton {
+    height: 44px;
+    width: 162px;
+    position: absolute;
+    top: 380px;
+    left: 580px;
+    margin: 20px 0;
+    color: #fff;
+    background-color: #C271FF;
+    border-radius: 20px;
+}
+
+h3.mbrtext {
+    width: 256px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+p.mbrchoice {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.membership h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 60px 40px 0 0;
+}
+
+.membership span {
+    color: #C271FF;
+}
+
+/* FAQ Section */
+.faq {
+    position: absolute;
+    top: 2600px;
+    width: 920px;
+    height: 707px;
+}
+
+.fqaheader {
+    font-size: 60px;
+    font-weight: light;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.fqarow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.space {
+    margin: 0 286px 0 0;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fqatext {
+    color: rgba(7, 22, 41, 0.516);
+}
+
+.fqacolumn {
+    width: 315.5px;
+    height: 270px;
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    top: 3900px;
+    width: 1440px;
+    height: 195px;
+    background-color: #071629;
+    /* color: #C271FF; */
+}
+.copyright{
+    color:rgb(234, 229, 229,0.2);
+    font-size: 12px;
+    padding-top:  200px;
+    margin-left: 200px;
+    
+}
+.icon {
+transform: translate(400%, -95%);
+/*-webkit-transform: translateX(200px) translateX(-100%);
+transform: translateX(900px) translateX(-100%);*/
+}
+.icon i{
+    box-sizing: border-box;
+    background-color: #fff;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    text-align: center;
+    padding-top: 12px;
+    margin-right: 17px;
+    
+
+}
+/* .footertext {
+    padding: 10px 100px 10px 100px;
+    text-align: center;
+}
+
+.footertext h2 {
+    font-size: 24px;
+    color:rgb(234, 229, 229,0.2);
+} */

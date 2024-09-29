@@ -10,7 +10,7 @@ This project is an HTML and CSS design based on a design provided in [Figma](htt
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Author](#license)
+- [Author](#author)
 - [Contact](#contact)
 
 ## Project Overview
