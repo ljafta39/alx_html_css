@@ -1,0 +1,85 @@
+/* Reset padding, margin, and border-box for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Make <body> and <main> flex containers */
+body, main {
+    display: flex;
+}
+
+/* Layout settings for <body> */
+body {
+    flex-direction: column;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Styling for the <h1> */
+body h1 {
+    color: #000;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* Padding and font size for header, main, and footer */
+header, main, footer {
+    padding: 0.5em;
+    font-size: 2rem;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    color: white;
+}
+
+/* Main container settings */
+main {
+    background-color: grey;
+    flex-direction: row;
+    gap: 0.5em;
+    height: calc(100vh - 208px); /* Adjust height based on header/footer size */
+    flex: auto;
+}
+
+/* Styling for <article> and <aside> inside <main> */
+main > article, main > aside {
+    padding: 0.2em;
+    overflow-y: auto;
+}
+
+/* Article styling */
+main > article {
+    background-color: blue;
+    flex: 2; /* Takes 2/3 of the space */
+}
+
+/* Aside styling */
+main > aside {
+    background-color: blueviolet;
+    flex: 1; /* Takes 1/3 of the space */
+}
+
+/* Footer styling */
+footer {
+    background-color: green;
+    color: white;
+}
+
+/* Responsive design for screens smaller than 800px */
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+
+    body.works_on_smartphone main {
+        display: block;
+    }
+
+    header .right {
+        float: none;
+    }
+}
